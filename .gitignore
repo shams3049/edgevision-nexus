@@ -1,0 +1,136 @@
+# ============================================
+# DOCUMENTATION POLICY ENFORCEMENT
+# ============================================
+# Only README.md is allowed in this project.
+# All other markdown files are blocked.
+# This prevents documentation sprawl.
+#
+# ✅ Allowed: README.md (project root)
+# ✅ Allowed: .github/*.md (GitHub templates)
+# ❌ Blocked: All other .md files
+#
+# To add documentation:
+# - Update README.md
+# - Use inline code comments/docstrings
+# ============================================
+
+*.md
+!README.md
+!.github/*.md
+
+# Explicitly block common doc files
+CONTRIBUTING.md
+CHANGELOG.md
+QUICK_START.md
+DEVELOPER*.md
+ARCHITECTURE*.md
+SETUP*.md
+GUIDE*.md
+TODO.md
+NOTES.md
+*_SUMMARY.md
+*_COMPLETE.md
+*_REFERENCE.md
+
+# Secrets & Credentials
+.env
+.env.local
+*.key
+*.pem
+*_secret
+credentials.json
+secrets.json
+
+# Documentation Policy: Only README.md allowed
+# Prevent additional markdown files from being committed
+*.md
+!README.md
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Go
+*.out
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Docker
+.docker/
+
+# Cache files (ZED models and optimized files)
+cache/
+*.model
+*_cache
+*_optimized*
+
+# OS
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Development
+.env.local
+.env.*.local
+tmp/
+temp/
+*.log
+bin/
+pkg/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+logs/
+*.log
