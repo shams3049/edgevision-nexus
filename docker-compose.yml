@@ -42,6 +42,8 @@ services:
     container_name: edgevision_api_gateway
     environment:
       - SIDECAR_URL=http://localhost:9000
+      - TAILSCALE_API_KEY=${APIKey}
+      - TAILSCALE_TAILNET=${TailnetID}
     ports:
       - "8000:8000"
     volumes:
